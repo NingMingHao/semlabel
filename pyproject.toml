@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semlabel"
+version = "1.0.0"
+description = "In-context semantic labeling platform: DINOv3 + INSID3 matching with a coreset memory bank"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "THIRD_PARTY.md"]
+authors = [{ name = "Minghao Ning" }]
+requires-python = ">=3.10"
+keywords = ["semantic segmentation", "annotation", "labeling", "dinov3", "in-context segmentation", "few-shot"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Scientific/Engineering :: Image Recognition",
+  "Framework :: FastAPI",
+]
+# torch / torchvision: install the CUDA build first (scripts/install.sh does); a plain pip install pulls the default wheel.
+dependencies = [
+  "torch>=2.4",
+  "torchvision>=0.19",
+  "numpy>=1.26",
+  "pillow>=10",
+  "opencv-python-headless>=4.8",
+  "scikit-learn>=1.4",
+  "scikit-image>=0.22",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "python-multipart>=0.0.9",
+  "pycocotools>=2.0.7",
+  "transformers>=4.56",
+  "huggingface_hub>=0.24",
+  "safetensors>=0.4",
+  "mcap>=1.1",
+  "mcap-ros2-support>=0.5",
+  # needed by the DINOv3 model code (torch.hub entry points)
+  "omegaconf>=2.3",
+  "ftfy>=6",
+  "regex",
+  "termcolor",
+  "torchmetrics>=1.0",
+  "submitit>=1.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "httpx>=0.27", "playwright>=1.45"]
+bench = ["pyarrow>=14", "pandas>=2"]
+
+[project.scripts]
+semlabel = "semlabel.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/NingMingHao/semlabel"
+
+[tool.setuptools.packages.find]
+include = ["semlabel*"]
+
+[tool.setuptools.package-data]
+semlabel = ["web/*.html", "web/*.js", "web/*.css", "data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning"]

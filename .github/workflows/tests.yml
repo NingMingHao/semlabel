@@ -1,0 +1,21 @@
+name: tests
+on:
+  push:
+  pull_request:
+jobs:
+  cpu:
+    # Engine, memory-bank, coreset, API and export tests on CPU. Tests that need the DINOv3 weights
+    # (not redistributable) or SAM weights skip themselves.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[test]"
+      - name: Test
+        run: pytest -q -rs

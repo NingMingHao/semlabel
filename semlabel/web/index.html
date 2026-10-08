@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SemLabel</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='7' height='7' fill='%23cdbea0'/%3E%3Crect x='9' width='7' height='7' fill='%235aafe6'/%3E%3Crect y='9' width='7' height='7' fill='%23dc3c3c'/%3E%3Crect x='9' y='9' width='7' height='7' fill='%233ca05a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/"><span class="logo" aria-hidden="true"><i></i><i></i><i></i><i></i></span>SemLabel</a>
+  <nav class="crumbs" id="crumbs"></nav>
+  <div class="spacer"></div>
+  <button class="jobchip" id="jobchip" title="Background jobs" hidden><span class="dot"></span><span id="jobtext">idle</span></button>
+  <span class="gpu" id="gpu"></span>
+</header>
+<main id="view"></main>
+<aside class="drawer" id="jobs-drawer" hidden>
+  <div class="drawer-head"><h3>Jobs</h3><button class="icon" data-close aria-label="Close">×</button></div>
+  <div id="jobs-list"></div>
+</aside>
+<div id="modal-root"></div>
+<div id="toasts" aria-live="polite"></div>
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>

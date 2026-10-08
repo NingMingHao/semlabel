@@ -1,0 +1,284 @@
+{
+ "groups": [
+  [
+   "other",
+   [
+    150,
+    150,
+    150
+   ]
+  ],
+  [
+   "floor",
+   [
+    205,
+    190,
+    160
+   ]
+  ],
+  [
+   "wall",
+   [
+    175,
+    185,
+    200
+   ]
+  ],
+  [
+   "ceiling",
+   [
+    225,
+    225,
+    230
+   ]
+  ],
+  [
+   "window",
+   [
+    90,
+    175,
+    230
+   ]
+  ],
+  [
+   "door",
+   [
+    120,
+    90,
+    200
+   ]
+  ],
+  [
+   "table / desk",
+   [
+    230,
+    140,
+    40
+   ]
+  ],
+  [
+   "chair",
+   [
+    220,
+    60,
+    60
+   ]
+  ],
+  [
+   "sofa / bed",
+   [
+    60,
+    160,
+    90
+   ]
+  ],
+  [
+   "storage",
+   [
+    150,
+    95,
+    55
+   ]
+  ],
+  [
+   "box / bin",
+   [
+    240,
+    200,
+    40
+   ]
+  ],
+  [
+   "appliance",
+   [
+    40,
+    170,
+    170
+   ]
+  ],
+  [
+   "plant",
+   [
+    100,
+    200,
+    80
+   ]
+  ],
+  [
+   "curtain",
+   [
+    175,
+    150,
+    215
+   ]
+  ],
+  [
+   "person",
+   [
+    235,
+    0,
+    130
+   ]
+  ],
+  [
+   "lamp / decor",
+   [
+    240,
+    230,
+    120
+   ]
+  ]
+ ],
+ "ade_to_group": {
+  "wall": "wall",
+  "building": "wall",
+  "sky": "window",
+  "floor": "floor",
+  "tree": "plant",
+  "ceiling": "ceiling",
+  "road": "other",
+  "bed ": "sofa / bed",
+  "windowpane": "window",
+  "grass": "other",
+  "cabinet": "storage",
+  "sidewalk": "other",
+  "person": "person",
+  "earth": "other",
+  "door": "door",
+  "table": "table / desk",
+  "mountain": "other",
+  "plant": "plant",
+  "curtain": "curtain",
+  "chair": "chair",
+  "car": "other",
+  "water": "other",
+  "painting": "lamp / decor",
+  "sofa": "sofa / bed",
+  "shelf": "storage",
+  "house": "other",
+  "sea": "other",
+  "mirror": "lamp / decor",
+  "rug": "floor",
+  "field": "other",
+  "armchair": "chair",
+  "seat": "chair",
+  "fence": "other",
+  "desk": "table / desk",
+  "rock": "other",
+  "wardrobe": "storage",
+  "lamp": "lamp / decor",
+  "bathtub": "other",
+  "railing": "other",
+  "cushion": "sofa / bed",
+  "base": "other",
+  "box": "box / bin",
+  "column": "wall",
+  "signboard": "other",
+  "chest of drawers": "storage",
+  "counter": "table / desk",
+  "sand": "other",
+  "sink": "appliance",
+  "skyscraper": "window",
+  "fireplace": "other",
+  "refrigerator": "appliance",
+  "grandstand": "other",
+  "path": "other",
+  "stairs": "other",
+  "runway": "other",
+  "case": "storage",
+  "pool table": "table / desk",
+  "pillow": "sofa / bed",
+  "screen door": "window",
+  "stairway": "other",
+  "river": "other",
+  "bridge": "other",
+  "bookcase": "storage",
+  "blind": "curtain",
+  "coffee table": "table / desk",
+  "toilet": "other",
+  "flower": "plant",
+  "book": "other",
+  "hill": "other",
+  "bench": "chair",
+  "countertop": "table / desk",
+  "stove": "appliance",
+  "palm": "other",
+  "kitchen island": "table / desk",
+  "computer": "appliance",
+  "swivel chair": "chair",
+  "boat": "other",
+  "bar": "table / desk",
+  "arcade machine": "other",
+  "hovel": "other",
+  "bus": "other",
+  "towel": "other",
+  "light": "lamp / decor",
+  "truck": "other",
+  "tower": "other",
+  "chandelier": "lamp / decor",
+  "awning": "other",
+  "streetlight": "plant",
+  "booth": "other",
+  "television receiver": "appliance",
+  "airplane": "other",
+  "dirt track": "other",
+  "apparel": "other",
+  "pole": "other",
+  "land": "other",
+  "bannister": "other",
+  "escalator": "other",
+  "ottoman": "sofa / bed",
+  "bottle": "other",
+  "buffet": "other",
+  "poster": "other",
+  "stage": "other",
+  "van": "other",
+  "ship": "other",
+  "fountain": "other",
+  "conveyer belt": "other",
+  "canopy": "other",
+  "washer": "appliance",
+  "plaything": "other",
+  "swimming pool": "other",
+  "stool": "chair",
+  "barrel": "table / desk",
+  "basket": "box / bin",
+  "waterfall": "other",
+  "tent": "other",
+  "bag": "box / bin",
+  "minibike": "other",
+  "cradle": "other",
+  "oven": "appliance",
+  "ball": "other",
+  "food": "other",
+  "step": "other",
+  "tank": "other",
+  "trade name": "other",
+  "microwave": "appliance",
+  "pot": "plant",
+  "animal": "other",
+  "bicycle": "other",
+  "lake": "other",
+  "dishwasher": "appliance",
+  "screen": "other",
+  "blanket": "other",
+  "sculpture": "other",
+  "hood": "other",
+  "sconce": "other",
+  "vase": "other",
+  "traffic light": "lamp / decor",
+  "tray": "other",
+  "ashcan": "box / bin",
+  "fan": "other",
+  "pier": "other",
+  "crt screen": "appliance",
+  "plate": "other",
+  "monitor": "appliance",
+  "bulletin board": "other",
+  "shower": "other",
+  "radiator": "other",
+  "glass": "window",
+  "clock": "other",
+  "flag": "other"
+ }
+}
